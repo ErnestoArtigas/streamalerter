@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace StreamAlerter.Api.Controllers
@@ -34,6 +35,12 @@ namespace StreamAlerter.Api.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpGet]
+        [Route("test")]
+        public String GetTest()
+        {
+            return "[{'name':'LodocArt'}, {'name': 'NerissAlpha'}]".Replace("'", "\"");
         }
     }
 }
