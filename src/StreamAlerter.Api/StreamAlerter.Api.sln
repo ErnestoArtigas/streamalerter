@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Api", "StreamAlerter.Api\StreamAlerter.Api.csproj", "{B001B43C-EA1C-49D7-82F9-89EA747682E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.Api", "StreamAlerter.Api\StreamAlerter.Api.csproj", "{B001B43C-EA1C-49D7-82F9-89EA747682E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Entities", "StreamAlerter.Entities\StreamAlerter.Entities.csproj", "{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.HttpsRepository", "StreamAlerter.HttpsRepository\StreamAlerter.HttpsRepository.csproj", "{3483F73C-0A53-4CBF-BF00-FD21322E8967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.DatabaseRepository", "StreamAlerter.DatabaseRepository\StreamAlerter.DatabaseRepository.csproj", "{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Core", "StreamAlerter.Core\StreamAlerter.Core.csproj", "{2F58812C-45EC-4808-A67E-DAC7FE7D7063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Business", "StreamAlerter.Business\StreamAlerter.Business.csproj", "{2A425FB2-90AC-4299-9059-2F0DE004FD2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{B001B43C-EA1C-49D7-82F9-89EA747682E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B001B43C-EA1C-49D7-82F9-89EA747682E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B001B43C-EA1C-49D7-82F9-89EA747682E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3483F73C-0A53-4CBF-BF00-FD21322E8967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3483F73C-0A53-4CBF-BF00-FD21322E8967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3483F73C-0A53-4CBF-BF00-FD21322E8967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3483F73C-0A53-4CBF-BF00-FD21322E8967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F58812C-45EC-4808-A67E-DAC7FE7D7063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F58812C-45EC-4808-A67E-DAC7FE7D7063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F58812C-45EC-4808-A67E-DAC7FE7D7063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F58812C-45EC-4808-A67E-DAC7FE7D7063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A425FB2-90AC-4299-9059-2F0DE004FD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A425FB2-90AC-4299-9059-2F0DE004FD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A425FB2-90AC-4299-9059-2F0DE004FD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A425FB2-90AC-4299-9059-2F0DE004FD2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
