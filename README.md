@@ -8,6 +8,14 @@ Projet de Master sur les WebServices qui se décompose en deux parties :
 
 Le projet est fait en pair programming, les conditions sanitaires nous obligeant à utiliser le Live Share de Visual Studio et Visual Studio Code pour travailler. Les commits seront donc très souvent assignés à la même personne pour cette raison.
 
+## Comandes
+
+```ps1
+cd streamalerter/src/StreamAlerter.Api/StreamAlerter.DatabaseRepository
+dotnet ef --startup-project ..\StreamAlerter.Api migrations add InitialCreate
+dotnet ef --startup-project ..\StreamAlerter.Api database update
+```
+
 ## Auteurs
 - Ernesto ARTIGAS
 - Alexandre FOVET

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "StreamAlerter.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/StreamAlerter.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StreamAlerter.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "StreamAlerter.Entities/1.0.0": {
+      "type": "project",
+      "path": "../StreamAlerter.Entities/StreamAlerter.Entities.csproj",
+      "msbuildProject": "../StreamAlerter.Entities/StreamAlerter.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "StreamAlerter.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\LodocArt\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\LodocArt\\Project\\streamalerter\\src\\StreamAlerter.Api\\StreamAlerter.Entities\\StreamAlerter.Entities.csproj": {
+              "projectPath": "D:\\Users\\LodocArt\\Project\\streamalerter\\src\\StreamAlerter.Api\\StreamAlerter.Entities\\StreamAlerter.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

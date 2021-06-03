@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "StreamAlerter.Business/1.0.0": {
+        "dependencies": {
+          "StreamAlerter.Core": "1.0.0"
+        },
+        "runtime": {
+          "StreamAlerter.Business.dll": {}
+        }
+      },
+      "StreamAlerter.Core/1.0.0": {
+        "dependencies": {
+          "StreamAlerter.Entities": "1.0.0"
+        },
+        "runtime": {
+          "StreamAlerter.Core.dll": {}
+        }
+      },
+      "StreamAlerter.Entities/1.0.0": {
+        "runtime": {
+          "StreamAlerter.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StreamAlerter.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StreamAlerter.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StreamAlerter.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

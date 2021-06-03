@@ -5,15 +5,21 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.Api", "StreamAlerter.Api\StreamAlerter.Api.csproj", "{B001B43C-EA1C-49D7-82F9-89EA747682E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Entities", "StreamAlerter.Entities\StreamAlerter.Entities.csproj", "{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.Entities", "StreamAlerter.Entities\StreamAlerter.Entities.csproj", "{6614EECD-9025-4AD6-ADFB-C79DC3032E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.HttpsRepository", "StreamAlerter.HttpsRepository\StreamAlerter.HttpsRepository.csproj", "{3483F73C-0A53-4CBF-BF00-FD21322E8967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.HttpsRepository", "StreamAlerter.HttpsRepository\StreamAlerter.HttpsRepository.csproj", "{3483F73C-0A53-4CBF-BF00-FD21322E8967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.DatabaseRepository", "StreamAlerter.DatabaseRepository\StreamAlerter.DatabaseRepository.csproj", "{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.DatabaseRepository", "StreamAlerter.DatabaseRepository\StreamAlerter.DatabaseRepository.csproj", "{97750687-CCF4-49A6-A4FF-8B1EA4D10F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Core", "StreamAlerter.Core\StreamAlerter.Core.csproj", "{2F58812C-45EC-4808-A67E-DAC7FE7D7063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.Core", "StreamAlerter.Core\StreamAlerter.Core.csproj", "{2F58812C-45EC-4808-A67E-DAC7FE7D7063}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6614EECD-9025-4AD6-ADFB-C79DC3032E8C} = {6614EECD-9025-4AD6-ADFB-C79DC3032E8C}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamAlerter.Business", "StreamAlerter.Business\StreamAlerter.Business.csproj", "{2A425FB2-90AC-4299-9059-2F0DE004FD2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamAlerter.Business", "StreamAlerter.Business\StreamAlerter.Business.csproj", "{2A425FB2-90AC-4299-9059-2F0DE004FD2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F58812C-45EC-4808-A67E-DAC7FE7D7063} = {2F58812C-45EC-4808-A67E-DAC7FE7D7063}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

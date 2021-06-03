@@ -1,0 +1,17 @@
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Business.deps.json
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Business.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\ref\StreamAlerter.Business.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Business.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.csprojAssemblyReference.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.AssemblyInfoInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.AssemblyInfo.cs
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.csproj.CoreCompileInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\ref\StreamAlerter.Business.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Core.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Core.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\bin\Debug\net5.0\StreamAlerter.Entities.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Business\obj\Debug\net5.0\StreamAlerter.Business.csproj.CopyComplete

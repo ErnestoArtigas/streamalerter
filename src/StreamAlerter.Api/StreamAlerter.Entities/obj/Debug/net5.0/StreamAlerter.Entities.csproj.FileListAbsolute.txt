@@ -1,0 +1,12 @@
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\bin\Debug\net5.0\StreamAlerter.Entities.deps.json
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\bin\Debug\net5.0\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\bin\Debug\net5.0\ref\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\bin\Debug\net5.0\StreamAlerter.Entities.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.csprojAssemblyReference.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.AssemblyInfoInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.AssemblyInfo.cs
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.csproj.CoreCompileInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\ref\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.Entities\obj\Debug\net5.0\StreamAlerter.Entities.pdb

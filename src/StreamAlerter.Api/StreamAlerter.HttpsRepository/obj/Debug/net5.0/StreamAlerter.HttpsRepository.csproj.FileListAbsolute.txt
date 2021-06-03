@@ -1,0 +1,17 @@
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.HttpsRepository.deps.json
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.HttpsRepository.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\ref\StreamAlerter.HttpsRepository.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.HttpsRepository.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.csprojAssemblyReference.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.AssemblyInfoInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.AssemblyInfo.cs
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.csproj.CoreCompileInputs.cache
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\ref\StreamAlerter.HttpsRepository.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.Core.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.Entities.dll
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.Core.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\bin\Debug\net5.0\StreamAlerter.Entities.pdb
+D:\Users\LodocArt\Project\streamalerter\src\StreamAlerter.Api\StreamAlerter.HttpsRepository\obj\Debug\net5.0\StreamAlerter.HttpsRepository.csproj.CopyComplete

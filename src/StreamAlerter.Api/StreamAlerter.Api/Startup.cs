@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using StreamAlerter.Business;
+using StreamAlerter.Core.Interfaces.Business;
+using StreamAlerter.Core.Interfaces.DatabaseRepository;
+using StreamAlerter.Core.Interfaces.HttpsRepository;
+using StreamAlerter.DatabaseRepository.Context;
+using StreamAlerter.DatabaseRepository.Repositories;
+using StreamAlerter.HttpsRepository;
 
 namespace StreamAlerter.Api
 {
@@ -26,7 +27,10 @@ namespace StreamAlerter.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<StreamAlerterContext>(options => options.UseSqlite("Data Source=D:/Users/LodocArt/Project/streamalerter/src/StreamAlerter.Api/StreamAlerter.DatabaseRepository/Database/streamAlerter.db"));
+            services.AddScoped<IStreamAlerterService, StreamAlerterService>();
+            services.AddScoped<IStreamAlerterDatabaseRepository, StreamAlerterRepository>();
+            services.AddScoped<IStreamAlerterHttpsRepository, TwitchApiRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
