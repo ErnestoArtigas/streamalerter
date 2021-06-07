@@ -27,7 +27,7 @@ namespace StreamAlerter.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<StreamAlerterContext>(options => options.UseSqlite("Data Source=D:/Users/LodocArt/Project/streamalerter/src/StreamAlerter.Api/StreamAlerter.DatabaseRepository/Database/streamAlerter.db"));
+            services.AddDbContext<StreamAlerterContext>(options => options.UseSqlite("Data Source=../StreamAlerter.DatabaseRepository/Database/streamAlerter.db"));
             services.AddScoped<IStreamAlerterService, StreamAlerterService>();
             services.AddScoped<IStreamAlerterDatabaseRepository, StreamAlerterRepository>();
             services.AddScoped<IStreamAlerterHttpsRepository, TwitchApiRepository>();

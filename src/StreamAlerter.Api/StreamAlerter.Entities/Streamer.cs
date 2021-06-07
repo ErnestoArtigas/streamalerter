@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace StreamAlerter.Entities
 {
@@ -16,6 +17,16 @@ namespace StreamAlerter.Entities
         {
             this.Name = streamerName;
             this.InLive = inLive;
+        }
+
+        // Override of the Equals operator for easier comparison.
+        public override bool Equals(object obj)
+        {
+            if ((obj == null) || !(this.GetType().Equals(obj.GetType())))
+                return false;
+            Entities.Streamer streamerToCompare = (Entities.Streamer)obj;                    
+            // We need to do equals and not == because different cases
+            return Name.Equals(streamerToCompare.Name, StringComparison.CurrentCultureIgnoreCase);
         }
     }
 }

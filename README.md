@@ -8,6 +8,11 @@ Projet de Master sur les WebServices qui se décompose en deux parties :
 
 Le projet est fait en pair programming, les conditions sanitaires nous obligeant à utiliser le Live Share de Visual Studio et Visual Studio Code pour travailler. Les commits seront donc très souvent assignés à la même personne pour cette raison.
 
+On a pensé à deux solutions :
+Utiliser une seconde base de données pour y stocker les streamers en cours
+Utiliser une simple liste.
+Etant donnée que les streamers en cours ne sont pas primordiaux comparé à la base de données permanente qui est celle des streamers enregistrés, on a préféré partir sur celle là pour une simplicité des résultats. Si l'application devait se relancer et qu'un streamer était déjà en live il y aurait une nouvelle notification mais qui ne serait pas dévastatrice. 
+
 ## Comandes
 
 ```ps1

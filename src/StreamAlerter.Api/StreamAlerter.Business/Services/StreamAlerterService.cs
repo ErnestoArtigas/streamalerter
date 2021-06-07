@@ -4,6 +4,7 @@ using StreamAlerter.Core.Interfaces.HttpsRepository;
 using StreamAlerter.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace StreamAlerter.Business
@@ -12,6 +13,7 @@ namespace StreamAlerter.Business
     {
         private IStreamAlerterHttpsRepository streamAlerterHttpsRepository;
         private IStreamAlerterDatabaseRepository streamAlerterDatabaseRepository;
+        private static Dictionary<string, bool> alreadyNotifiedStreamer = new Dictionary<string, bool>();
         public StreamAlerterService(IStreamAlerterHttpsRepository streamAlerterHttpsRepository, IStreamAlerterDatabaseRepository streamAlerterDatabaseRepository)
         {
             this.streamAlerterHttpsRepository = streamAlerterHttpsRepository;
@@ -62,21 +64,44 @@ namespace StreamAlerter.Business
             return streamAlerterDatabaseRepository.Delete(streamerToDelete);
         }
 
+        public bool isStreamerCached(string streamerName)
+        {
+            return alreadyNotifiedStreamer.ContainsKey(streamerName);
+        }
 
-        public async Task<IEnumerable<Streamer>> GetLiveStreamers()
+        public async Task<IEnumerable<Entities.Streamer>> GetLiveStreamers()
         {
             var savedStreamerArray = GetSavedStreamerDB();
-            List<Streamer> streamerInLiveArray = new List<Streamer>();
+            List<Entities.Streamer> streamerInLiveArray = new List<Streamer>();
+
+            // need to put all alreadyNotifiedStreamer to false, then if they are still in live we put them true, at the end if they are not in live anymore we remove them from the list
+            foreach (var element in alreadyNotifiedStreamer)
+                alreadyNotifiedStreamer[element.Key] = false;
 
             foreach (Entities.Streamer element in savedStreamerArray)
             {
                 var streamerArray = await streamAlerterHttpsRepository.GetTwitchUsers(element.Name);
 
-                foreach (Streamer streamerElement in streamerArray)
-                    // We need to do equals and not == because different cases
+                foreach (Entities.Streamer streamerElement in streamerArray)
                     if (streamerElement.Name.Equals(element.Name, StringComparison.CurrentCultureIgnoreCase) && streamerElement.InLive)
-                        streamerInLiveArray.Add(streamerElement);
+                    {
+                        if (!isStreamerCached(streamerElement.Name))
+                        {
+                            alreadyNotifiedStreamer.Add(streamerElement.Name, true);
+                            streamerInLiveArray.Add(streamerElement);
+                        }
+                        else
+                            alreadyNotifiedStreamer[streamerElement.Name] = true;
+                    }
             }
+
+            List<string> notifiedStreamerToDelete = new List<string>();
+            foreach (var element in alreadyNotifiedStreamer)
+                if (alreadyNotifiedStreamer[element.Key] == false)
+                    notifiedStreamerToDelete.Add(element.Key);
+
+            foreach (var element in notifiedStreamerToDelete)
+                alreadyNotifiedStreamer.Remove(element);
 
             return streamerInLiveArray;
         }
