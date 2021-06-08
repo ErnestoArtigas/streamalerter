@@ -1,0 +1,22 @@
+{
+	"name": "botTest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"linter": "npx eslint .",
+		"linterFix": "npx eslint . --fix"
+	},
+	"keywords": [],
+	"author": "LodocArt & Alexandre20-f",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^12.5.3",
+		"replace-json-property": "^1.6.3",
+		"unirest": "^0.6.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.24.0"
+	}
+}

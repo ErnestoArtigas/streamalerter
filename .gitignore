@@ -1,3 +1,4 @@
-streamAlerterBot/node_modules
+src/streamAlerterBot/node_modules
+src/streamAlerterBot/package-lock.json
 src/StreamAlerter.Api/.vs
-*/desktop.ini
+.vscode
