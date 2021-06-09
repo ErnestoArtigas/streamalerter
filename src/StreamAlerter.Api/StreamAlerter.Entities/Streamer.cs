@@ -19,12 +19,17 @@ namespace StreamAlerter.Entities
             this.InLive = inLive;
         }
 
+        public override string ToString()
+        {
+            return Name + ", " + InLive;
+        }
+
         // Override of the Equals operator for easier comparison.
         public override bool Equals(object obj)
         {
             if ((obj == null) || !(this.GetType().Equals(obj.GetType())))
                 return false;
-            Entities.Streamer streamerToCompare = (Entities.Streamer)obj;                    
+            Entities.Streamer streamerToCompare = (Entities.Streamer)obj;
             // We need to do equals and not == because different cases
             return Name.Equals(streamerToCompare.Name, StringComparison.CurrentCultureIgnoreCase);
         }

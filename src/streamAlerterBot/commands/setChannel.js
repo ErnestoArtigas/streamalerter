@@ -15,7 +15,6 @@ module.exports = {
 		else {
 			channelID = args[0].substring(2, args[0].length - 1);
 			replaceJSONProperty.replace("./config.json", "channelID", channelID);
-			console.log(channelID);
 			message.channel.send("The channel was defined.");
 		}
 	}

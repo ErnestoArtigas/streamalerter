@@ -11,6 +11,7 @@ namespace StreamAlerter.Core.Interfaces.Business
         public Task<IEnumerable<Streamer>> GetLiveStreamers();
         public Entities.Streamer Upsert(Entities.Streamer streamer);
         public Entities.Streamer Retrieve(string name);
+        public bool isStreamerCached(string streamerName);
         public IEnumerable<Entities.Streamer> RetrieveAll();
         public Entities.Streamer Modify(string name, Entities.Streamer streamer);
         public bool Remove(string name);

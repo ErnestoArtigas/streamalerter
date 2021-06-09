@@ -17,6 +17,7 @@ namespace StreamAlerter.Api.Controllers
             this.streamAlerterService = streamAlerterService;
         }
 
+        // The Put route was developped but not used in the final project, replaced by the Post route, useful for updating future data as the language or game streamed.
         [HttpPut]
         public IActionResult Put(Entities.Streamer streamer)
         {

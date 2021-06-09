@@ -33,6 +33,7 @@ namespace StreamAlerter.HttpsRepository
 
                 JsonSerializer serializer = new JsonSerializer();
 
+                // We developped TwitchDataModel and TwitchStreamerModel for easily transform the data from Twitch as proper Streamer instances.
                 try
                 {
                     var twitchData = serializer.Deserialize<TwitchDataModel>(jsonReader);
@@ -47,7 +48,6 @@ namespace StreamAlerter.HttpsRepository
                 }
                 catch (JsonReaderException jsonReaderEx)
                 {
-                    // We need to throw a new exception bc else it will cause problems.
                     throw new JsonReaderException(jsonReaderEx.Message);
                 }
 

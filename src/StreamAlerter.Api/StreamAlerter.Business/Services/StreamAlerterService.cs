@@ -4,7 +4,6 @@ using StreamAlerter.Core.Interfaces.HttpsRepository;
 using StreamAlerter.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace StreamAlerter.Business
@@ -74,7 +73,7 @@ namespace StreamAlerter.Business
             var savedStreamerArray = GetSavedStreamerDB();
             List<Entities.Streamer> streamerInLiveArray = new List<Streamer>();
 
-            // need to put all alreadyNotifiedStreamer to false, then if they are still in live we put them true, at the end if they are not in live anymore we remove them from the list
+            // We need to put all alreadyNotifiedStreamer to false, then if they are still in live we put them true, at the end if they are not in live anymore we remove them from the list.
             foreach (var element in alreadyNotifiedStreamer)
                 alreadyNotifiedStreamer[element.Key] = false;
 

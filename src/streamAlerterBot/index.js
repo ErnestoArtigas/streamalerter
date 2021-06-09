@@ -35,6 +35,9 @@ client.once("ready", () => {
 				}
 			}).catch((error) => console.log("error", error));
 		}
+		else
+			// Use of parsing the json file because of the cache by nodejs that won't update the channelID value.
+			channelID = JSON.parse(fs.readFileSync("config.json")).channelID;
 	}, 3000);
 });
 
@@ -72,5 +75,5 @@ client.on("message", message => {
 });
 
 function specificMessage(streamerName) {
-	return streamerName + " is Streaming. Go watch his live on https://www.twitch.tv/" + streamerName;
+	return "@everyone - " + streamerName + " is Streaming. Go watch his live on https://www.twitch.tv/" + streamerName;
 }
