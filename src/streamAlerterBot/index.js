@@ -25,6 +25,8 @@ client.once("ready", () => {
 	* To avoid any problems of saving the wrong channel of a distinct server we verify if it's undefined.
 	*/
 	setInterval(function() {
+		// Use of parsing the json file because of the cache by nodejs that won't update the channelID value.
+		channelID = JSON.parse(fs.readFileSync("config.json")).channelID;
 		if (client.channels.cache.get(channelID) != undefined) {
 			callGetApi("https://localhost:44377/StreamAlerter/getLiveStreamers").then((liveStreamers) => {
 				console.log("result : ", liveStreamers);
@@ -35,9 +37,6 @@ client.once("ready", () => {
 				}
 			}).catch((error) => console.log("error", error));
 		}
-		else
-			// Use of parsing the json file because of the cache by nodejs that won't update the channelID value.
-			channelID = JSON.parse(fs.readFileSync("config.json")).channelID;
 	}, 3000);
 });
 

@@ -44,7 +44,7 @@ module.exports.callDeleteApi = (link, streamerName) => {
 				if (res.error)
 					return reject(res.error);
 				else
-					return resolve((Boolean)(res.raw_body));
+					return resolve(JSON.parse(res.raw_body.toLowerCase()));
 			});
 	});
 };

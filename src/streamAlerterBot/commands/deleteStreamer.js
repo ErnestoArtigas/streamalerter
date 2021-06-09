@@ -13,6 +13,7 @@ module.exports = {
 		}
 		else {
 			callDeleteApi("https://localhost:44377/StreamAlerter", args[0]).then((result) => {
+				console.log(result);
 				if (!result)
 					message.channel.send("The streamer wasn't found in the database.");
 				else {
